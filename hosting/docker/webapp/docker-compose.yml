@@ -71,7 +71,7 @@ services:
     restart: ${RESTART_POLICY:-unless-stopped}
     logging: *logging-config
     ports:
-      - ${POSTGRES_PUBLISH_IP:-127.0.0.1}:5433:5432
+      - ${POSTGRES_PUBLISH_IP:-127.0.0.1}:5440:5432
     volumes:
       - postgres:/var/lib/postgresql/data/
     networks:
