@@ -36,7 +36,7 @@ services:
       TRIGGER_WORKLOAD_API_PORT_EXTERNAL: 8020
       # Optional settings
       DEBUG: 1
-      ENFORCE_MACHINE_PRESETS: 1
+      ENFORCE_MACHINE_PRESETS: ${ENFORCE_MACHINE_PRESETS}
       TRIGGER_DEQUEUE_INTERVAL_MS: 1000
       DOCKER_HOST: tcp://docker-proxy:2375
       DOCKER_RUNNER_NETWORKS: webapp,supervisor
