@@ -57,7 +57,7 @@ services:
       DOCKER_REGISTRY_URL: ${DOCKER_REGISTRY_URL}
       # Bootstrap - this will automatically set up a worker group for you
       # This will NOT work for split deployments
-      TRIGGER_BOOTSTRAP_ENABLED: 1
+      TRIGGER_BOOTSTRAP_ENABLED: 0
       TRIGGER_BOOTSTRAP_WORKER_GROUP_NAME: bootstrap
       TRIGGER_BOOTSTRAP_WORKER_TOKEN_PATH: /home/node/shared/worker_token
       # Limits
